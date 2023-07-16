@@ -1,0 +1,122 @@
+body {
+    font: 11px sans-serif;
+    background-color: #ffffff;
+}
+
+.legend {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+div.tooltip {
+    position: absolute;
+    padding: 7px;
+    font-size: 1.2em;
+    pointer-events: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 120px;
+}
+
+point {
+    stroke: none;
+    fill: #9c9c9c;
+}
+
+.breadcrumb {
+    font: .75em sans-serif;
+    list-style: none;
+}
+
+.breadcrumb.bc2x {
+    font-size: 1em;
+}
+
+.breadcrumb.bc3x {
+    font-size: 1.25em;
+}
+
+.breadcrumb p {
+    margin: 0;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    margin-bottom: .2em;
+}
+
+.breadcrumb li a {
+    background-color: #006a97;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    max-height: 2em;
+    padding: .5em 1em .5em 1.5em;
+    position: relative;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.breadcrumb li a:before {
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid #fff;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1.25em;
+    z-index: 1;
+}
+
+.breadcrumb li a:after {
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid #006a97;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1em;
+    transition: .25s;
+    z-index: 1;
+}
+
+.breadcrumb li a:hover {
+    background-color: #0098d9;
+}
+
+.breadcrumb li a:hover:after {
+    border-left-color: #0098d9;
+}
+
+.breadcrumb li:last-child a {
+    background-color: #0098d9;
+    pointer-events: none;
+}
+
+.breadcrumb li:last-child a:after {
+    border-left-color: #0098d9;
+}
+
+a {
+    cursor: pointer;
+}
