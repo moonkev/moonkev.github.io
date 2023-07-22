@@ -7,24 +7,19 @@
     <link rel="stylesheet" href="style.css">
     </link>
     <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js'></script>
     <script src="charts.js"></script>
 </head>
 
 <body onload="init()">
-    <ul class="breadcrumb bc2x">
-        <!-- <li id="home-crumb">
-            <a onclick="renderLineChart()">Home</a>
-        </li>
-        <li id="map-crumb">
-            <a onclick="renderChoropleth()">Map</a>
-        </li>
-        <li id="demo-crumb">
-            <a>Demographics</a>
-        </li> -->
-    </ul>
+    <div class="bc">
+        <ul class="breadcrumb">
+        </ul>
+    </div>
 
-    <div id="chart-heading" class="heading"></div>
+    <div id="chart-heading" class="chartHeading"></div>
     <div id="chart-area" class="chartArea"></div>
+    <div id="scene-description" class="description"></div>
 </body>
 
 </html>
